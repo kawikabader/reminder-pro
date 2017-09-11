@@ -13,7 +13,7 @@ const reminders = (state = [], action) => {
     case ADD_REMINDER:
       reminders = [...state, reminder(action)];
       console.log("reminders as state", reminders);
-      break;
+      return reminders;
     default:
       return state;
   }
